@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstracta Blog - Backoffice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Abstracta Blog - Backoffice</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" id="newPostLink">Agregar Nuevo Post</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="newPostSection" style="display: none;">
+            <h2>Nuevo Post</h2>
+            <form id="newPostForm">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Contenido:</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.getElementById('newPostLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('newPostSection').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
