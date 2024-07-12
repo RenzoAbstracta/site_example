@@ -13,7 +13,8 @@
     <div>
         <nav>
             <ul>
-                <li><a href="#" id="newPostLink">Crear Post</a></li>
+                <li><a href="#" id="homeId">Home</a></li>
+                <li><a href="#" id="newPostLinkChanged">Crear Post</a></li>
                 <li><a href="#" id="deletePostLink">Delete Post</a></li>
             </ul>
         </nav>
@@ -34,7 +35,7 @@
         </section>
     </main>
     <script>
-        document.getElementById('newPostLink').addEventListener('click', function(event) {
+        document.getElementById('newPostLinkChanged').addEventListener('click', function(event) {
             event.preventDefault();
             document.getElementById('newPostSection').style.display = 'block';
         });
