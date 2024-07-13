@@ -10,16 +10,11 @@
     <header>
         <h1>Abstracta Blog - Backoffice</h1>
     </header>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="#" id="homeId">Home</a></li>
-                <li><a href="#" id="newPostLinkChanged">Post</a></li>
-                <li><a href="#" id="deletePostLink">Delete Post</a></li>
-            </ul>
-        </nav>
-    </div>
-    
+    <nav>
+        <ul>
+            <li><a href="#" id="newPostLink">Post</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="newPostSection" style="display: none;">
             <h2>Nuevo Post</h2>
@@ -35,7 +30,7 @@
         </section>
     </main>
     <script>
-        document.getElementById('newPostLinkChanged').addEventListener('click', function(event) {
+        document.getElementById('newPostLink').addEventListener('click', function(event) {
             event.preventDefault();
             document.getElementById('newPostSection').style.display = 'block';
         });
